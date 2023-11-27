@@ -1,0 +1,904 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Overpass', sans-serif;
+}
+
+.backgroundLinearcolor{
+    background-image: linear-gradient(to bottom right, white, #D6E6FE 100%);
+    width: 100%;
+    height: 600px;
+    border-radius: 0px 0px 35px 35px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.logo{
+    width: 40px;
+    height: 40px;
+    margin-top: 32px;
+}
+
+.header{
+    width: 327px;
+    height: 327px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.title{
+    font-size: 48px;
+    font-weight: bold;
+    color: #253347;
+    line-height: 110%;
+}
+
+.description{
+    font-size: 16px;
+    color: #5E6E85;
+    line-height: 150%;
+}
+
+.card{
+    width: 328px;
+    height: 649px;
+    background-color: white;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 48px;
+    box-shadow: 0px 4px 4px #bfbfbf;
+}
+
+.cardHeading{
+    font-size: 24px;
+    font-weight: bold;
+    color: #253347;
+    width: 280px;
+    margin-bottom: 24px;
+    margin-top: 24px;
+}
+
+.choice{
+    width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.metric , .imperial{
+    font-size: 16px;
+    line-height: 150%;
+    width: 128px;
+    height: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.option{
+    width: 31px;
+    height: 31px;
+}
+
+.imperialScale{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 280px;
+    height: 212px;
+    margin-bottom: 24px;
+}
+
+.imperialHeight , .imperialWeight{
+    width: 100%;
+    height: 98px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.imperialInputs{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.imperialScale .input{
+    width: 132px;
+    height: 69px;
+    border-radius: 16px;
+    border: 1px solid #D8E2E7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputFt , .inputIn , .inputSt , .inputLbs{
+    width: 100%;
+    height: 69px;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    padding-left: 24px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.metricScale {
+    width: 280px;
+    height: 212px;
+    display: block;
+}
+
+.metricScale .input{
+    width: 100%;
+    height: 69px;
+    border-radius: 16px;
+    border: 1px solid #D8E2E7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputCm , .inputKg{
+    padding-left: 24px;
+    font-size: 24px;
+}
+
+.cm , .kg , .ft , .in{
+    margin-right: 24px;
+    color: blue;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: -5%;
+}
+
+.metricScale input{
+    width: 100%;
+    height: 69px;
+    border-radius: 16px;
+    outline: none;
+    border: none;
+}
+
+.metricHeight , .metricWeight{
+    height: 98px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.heightHead , .weightHead{
+    font-size: 14px;
+    line-height: 150%;
+    color: #5E6E85;
+}
+
+.result{
+    width: 280px;
+    height: 257px;
+    border-radius: 16px;
+    background-image: linear-gradient(#345FF6 100%, #587DFF 100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resultSection{
+    width: 216px;
+    height: 85px;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.resultQuestion{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.resultScore{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.resultSDescription{
+    margin-top: 24px;
+    width: 216px;
+    height: 84px;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.sectionTwo{
+    width: 375px;
+    height: 744.39px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 72px;
+}
+
+.man{
+    width: 100%;
+    height: 354.39px;
+}
+
+.sectionTwoText{
+    width: 328px;
+    height: 342px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.sectionTwoQuestion{
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 110%;
+    letter-spacing: -5%;
+}
+
+.sectionTwoAnswer{
+    font-size: 16px;
+    line-height: 150%;
+    color: #5E6E85;
+}
+
+.sectionThree{
+    width: 100%;
+    height: 879px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 72px;
+    background-image: linear-gradient(to bottom right, white, #D6E6FE 100%);
+}
+
+.toDo{
+    width: 327px;
+    height: 221px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.toDo img{
+    width: 64px;
+    height: 64px;
+}
+
+.toDoText{
+    width:327px;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.toDoHeading{
+    font-size: 24px;
+    font-weight: bold;
+    color: #253347;
+    letter-spacing: -5%;
+}
+
+.todoDescription{
+    font-size: 16px;
+    line-height: 150%;
+    color: #5E6E85;
+}
+
+
+.sectionFour{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 72px;
+    margin-bottom: 96px;
+}
+
+.sectionFourInside{
+    width: 327px;
+    height: 1363px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionFourHeading{
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 110%;
+    letter-spacing: -5%;
+    color: #253347;
+    margin-bottom: 32px;
+}
+
+.sectionFourDescription{
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #5E6E85;
+    margin-bottom: 56px;
+}
+
+
+
+.sectionFourCardGender{
+    height: 216px;
+    border-radius: 16px;
+    background-color: white;
+    width: 327px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+    box-shadow: 16px 32px 56px #c9d8e8;
+}
+
+.insideCardGender{
+    width: 279px;
+    height: 168px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sectionFourCardHeading{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #253347;
+    margin-bottom: 20px;
+}
+
+.sectionFourCardHeading img{
+    margin-right: 12px;
+}
+
+.sectionFourCardSection{
+    font-size: 16px;
+    line-height: 150%;
+    color: #5E6E85;
+}
+
+.sectionFourCardAge{
+    height: 168px;
+    border-radius: 16px;
+    background-color: white;
+    width: 327px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+    box-shadow: 16px 32px 56px #c9d8e8;
+}
+
+.insideCardAge{
+    width: 279px;
+    height: 120px;
+}
+
+.sectionFourCardMuscle{
+    height: 192px;
+    border-radius: 16px;
+    background-color: white;
+    width: 327px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+    box-shadow: 16px 32px 56px #c9d8e8;
+}
+
+.insideCardMuscle{
+    width: 279px;
+    height: 144px;
+}
+
+.sectionFourCardPregnancy{
+    height: 240px;
+    border-radius: 16px;
+    background-color: white;
+    width: 327px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+    box-shadow: 16px 32px 56px #c9d8e8;
+}
+
+.insideCardPregnancy{
+    width: 279px;
+    height: 192px;
+}
+
+.sectionFourCardRace{
+    height: 216px;
+    border-radius: 16px;
+    background-color: white;
+    width: 327px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 16px 32px 56px #c9d8e8;
+}
+
+.insideCardRace{
+    width: 279px;
+    height: 168px;
+}
+
+
+@media only screen and (min-width: 768px){
+
+    .backgroundLinearcolor{
+        height: 640px;
+    }
+    
+    .header{
+        width: 686px;
+        height: 202px;
+        margin-top: 40px;
+        justify-content: space-between;
+    }
+    
+    .title{
+        letter-spacing: -5%;
+        width: 54%;
+    }
+    
+    .card{
+        width: 686px;
+        height: 467px;
+        padding-bottom: 30px;
+    }
+    
+    .cardHeading{
+        width: 622px;
+        margin-bottom: 32px;
+        margin-top: 32px;
+    }
+    
+    .choice{
+        width: 622px;
+        margin-bottom: 32px;
+    }
+    
+    .metric , .imperial{
+        width: 299px;
+        justify-content: flex-start;
+    }
+
+    .option{
+        margin-right: 18px;
+    }
+        
+    .metricScale {
+        width: 622px;
+        height: 98px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .metricScale .input{
+        width: 299px;
+    }
+
+    .imperialScale{
+        display: none;
+        width: 622px;
+        height: 98px;
+        padding-bottom: 50px;
+    }
+    
+    .imperialScale .input{
+        width: 299px;
+    }
+
+    .result{
+        width: 622px;
+        height: 149px;
+        margin-top: 32px;
+        border-radius: 16px 999px 999px 16px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .resultSection{
+        width: 267px;
+        margin-top: 0px;
+        margin-left: 32px;
+    }
+    
+    .resultQuestion{
+        line-height: 150%;
+    }
+    
+    .resultScore{
+        line-height: 110%;
+    }
+    
+    .resultSDescription{
+        margin-top: 43px;
+        width: 267px;
+        margin-right: 32px;
+    }
+    
+    .sectionTwo{
+        width: 841px;
+        height: 411.09px;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 96px;
+        position: relative;
+        left: -70px;
+    }
+    
+    .man{
+        width: 435px;
+        height: 411.09px;
+    }
+    
+    .sectionTwoText{
+        width: 331px;
+        height: 342px;
+    }
+    
+
+    .sectionThree{
+        height: 503px;
+    }
+    
+    .toDo{
+        width: 686px;
+        height: 101px;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .toDo img{
+        width: 64px;
+        height: 64px;
+    }
+    
+    .toDoText{
+        width:582px;
+        height: 100%;
+    }
+
+    .sectionFour{
+        margin-top: 96px;
+        margin-bottom: 96px;
+    }
+    
+    .sectionFourInside{
+        width: 686px;
+        height: 963px;
+    }
+
+    .sectionFourCards{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 335.5px 335.5px;
+        row-gap: 24px;
+        column-gap: 15px;
+    }
+
+    .sectionFourCards .sectionFourCardRace {
+        justify-self: center;
+        width: 335.5px;
+        grid-column-start: span 2;
+    }
+
+    
+    .sectionFourCardGender{
+        height: 232px;
+        box-shadow: 16px 32px 56px #c9d8e8;
+    }
+    
+    .insideCardGender{
+        width: 271.5px;
+    }
+    
+    .sectionFourCardAge{
+        height: 232px;
+        box-shadow: 16px 32px 56px #c9d8e8;
+    }
+    
+    .insideCardAge{
+        height: 168px;
+    }
+    
+    .sectionFourCardMuscle{
+        height: 232px;
+        border-radius: 16px;
+        box-shadow: 16px 32px 56px #c9d8e8;
+    }
+    
+    .insideCardMuscle{
+        height: 168px;
+    }
+    
+    .sectionFourCardPregnancy{
+        height: 232px;
+        box-shadow: 16px 32px 56px #c9d8e8;
+
+    }
+    
+    .insideCardPregnancy{
+        height: 168px;
+    }
+    
+    .sectionFourCardRace{
+        height: 232px;
+        box-shadow: 16px 32px 56px #c9d8e8;
+    }
+   
+}
+
+
+
+@media only screen and (min-width: 1440px){
+
+
+    .backgroundLinearcolor{
+        background-image: linear-gradient(to bottom right, white, #D6E6FE 100%);
+        width: 978px;
+        height: 737px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        margin-left: 24px;
+    }
+    
+    .logo{
+        width: 58.75px;
+        height: 58.75px;
+        margin-top: 75px;
+        margin-left: 140px;
+        align-self: flex-start;
+    }
+    
+    .header{
+        width: 564px;
+        height: 271px;
+        align-items: flex-start;
+        text-align: left;
+        align-self: flex-start;
+        margin-left: 140px;
+        margin-top: 127px;
+        margin-bottom: 265px;
+    }
+    
+    .title{
+        font-size: 64px;
+        width: 500px;
+        margin-bottom: 35px;
+    }
+    
+    .description{
+        width: 500px;
+    }
+
+    .card{
+        width: 564px;
+        height: 484px;
+        align-items: flex-start;
+        position: absolute;
+        top: 118px;
+        right: 140px;
+    }
+    
+    .cardHeading{
+        margin-left: 32px;
+    }
+    
+    .choice{
+        width: 500px;
+        margin-left: 32px;
+    }
+    
+    .metric , .imperial{
+        width: 238px;
+    }
+
+    
+    .metricScale {
+        width: 500px;
+        height: 98px;
+        margin-left: 32px;
+    }
+
+    
+    .metricScale .input{
+        width: 238px;
+        height: 69px;
+    }
+    
+    .imperialScale{
+        display: none;
+        width: 500px;
+        height: 98px;
+        padding-bottom: 50px;
+        margin-left: 32px;
+    }
+    
+    .imperialScale .input{
+        width: 238px;
+    }
+    
+    .result{
+        margin-left: 32px;
+        width: 500px;
+        height: 166px;
+    }
+    
+    .resultSection{
+        width: 206px;
+        height: 102px;
+    }
+    
+    .resultScore{
+        font-size: 64px;
+    }
+    
+    .resultSDescription{
+        margin-top: 0px;
+        width: 206px;
+        height: 84px;
+    }
+    
+    .sectionTwo{
+        width: 1160px;
+        height: 533px;
+        margin-bottom: 96px;
+    }
+
+    .man{
+        width: 564px;
+        height: 100%;
+    }
+
+    .sectionTwoText{
+        width: 465px;
+        height: 309px;
+        align-self: flex-start;
+        margin-top: 184px;
+    }
+    
+    .sectionTwoQuestion{
+        font-size: 48px;
+    }
+
+    .sectionThree{
+        width: 1392px;
+        height: 402px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 32px;
+    }
+
+    .toDo{
+        width: calc(1159px/3);
+        height: 234px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    
+    .toDoText{
+        width:365px;
+        height: 125px;
+    }
+
+
+    .sectionFourInside{
+        width: 1160px;
+        height: 704px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    
+    .sectionFourHeading{
+        width: 564px;
+        height: 53px;
+        font-size: 48px;
+        margin-bottom: 35px;
+        align-self: flex-start;
+    }
+    
+    .sectionFourDescription{
+        width: 564px;
+        height: 96px;
+        align-self: flex-start;
+        text-align: left;
+    }
+
+    .sectionFourCards{
+        width: 961px;
+        height: 701px;
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+
+    .sectionFourCardGender{
+        position: absolute;
+        right: 0;
+        margin-right: 99px;
+    }
+
+    .sectionFourCardAge{
+        height: 184px;
+        width: 365px;
+        position: absolute;
+        right: 0;
+        top: 264px;
+        margin-right: 397px;
+    }
+
+    .insideCardAge , .insideCardMuscle{
+        width: 301px;
+        height: 120px;
+    }
+
+    .sectionFourCardMuscle{
+        height: 184px;
+        width: 365px;
+        position: absolute;
+        right: 0;
+        top: 264px;
+    }
+
+    .sectionFourCardPregnancy{
+        height: 232px;
+        width: 365px;
+        position: absolute;
+        bottom: 0px;
+        margin-bottom: 0px;
+    }
+
+    .sectionFourCardRace{
+        height: 232px;
+        width: 365px;
+        position: absolute;
+        bottom: 0px;
+        left: 397px;
+    }
+
+   
+}
